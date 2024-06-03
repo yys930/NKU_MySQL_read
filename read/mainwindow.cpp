@@ -365,7 +365,7 @@ void MainWindow::on_Del_clicked()
 void MainWindow::on_getpoint_clicked()
 {
     QSqlQuery query1(db);
-    query1.exec(QString("select bookname,bookid from bookview "));
+    query1.exec(QString("select bookname,bookid from book "));
     QStringList headerLabels;
     headerLabels<<"书名"<<"领取积分";
     ui->getp->setColumnCount(headerLabels.count());
